@@ -8,7 +8,6 @@ if (process.argv.length <= 3 ){
 
 let num = process.argv[3];
 file = fs.readFileSync(process.argv[2], 'utf-8').split('\n');
-file = file.slice((file.length-1) - num, -1);
-file.forEach(function(element) {
+file.slice((file.length-1) - num, -1).forEach(function(element) {
     console.log(element);
 }, this);
