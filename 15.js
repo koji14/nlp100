@@ -1,5 +1,5 @@
 let fs = require('fs');
-let  = '';
+let  file = '';
 
 // 引数チェック
 if (process.argv.length <= 3 ){
